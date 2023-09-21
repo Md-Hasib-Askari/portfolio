@@ -12,7 +12,6 @@ function App() {
       background: 'bg-white'
   })
     const darkMode = (e) => {
-        console.log(e.target.value);
         if (e.target.value === '🌙') {
             setSymbol('☀️');
             setCss({
@@ -36,7 +35,7 @@ function App() {
               <div className="p-4 md:p-12 text-center lg:text-left">
                   {/* <!-- Image for mobile view--> */}
                   <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center border-b-4 border-r-4 border-indigo-500"
-                       style={{backgroundImage: "url('https://avatars.githubusercontent.com/u/31061360?v=4')"}}></div>
+                       style={{backgroundImage: "url(./logo.png)"}}></div>
                   <h1 className="text-3xl font-bold pt-8 lg:pt-0">Md Hasib Askari</h1>
                   <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
                   <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
@@ -81,11 +80,11 @@ function App() {
           <div className="w-full lg:w-2/5">
               {/* <!-- Big profile image for side bar (desktop) --> */}
               <img src="/vertical_img.png"
-                   className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block border-l-4 border-indigo-500" />
+                   className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block border-l-4 border-indigo-500"  alt="Anime Coding"/>
 
           </div>
           <div className="absolute top-0 right-0 h-12 w-18 p-4">
-              <button className="js-change-theme focus:outline-none" onClick={darkMode} value={symbol}>{symbol}</button>
+              <button className="js-change-theme focus:outline-none btn-md" onClick={darkMode} value={symbol}>{symbol}</button>
           </div>
       </div>
   )

@@ -57,22 +57,22 @@ function App() {
                   </div>
                   <div
                       className="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-                      <a className="link" href="https://facebook.com/askarihasib" data-tippy-content="@facebook_handle">
+                      <a className="link" href="https://facebook.com/askarihasib" target="_blank" data-tippy-content="@facebook_handle">
                           <FaFacebook size={35} className="text-gray-600"/>
                       </a>
-                      <a className="link" href="https://twitter.com/DevHasib" data-tippy-content="@twitter_handle">
+                      <a className="link" href="https://twitter.com/DevHasib" target="_blank" data-tippy-content="@twitter_handle">
                           <FaTwitter size={35} className="text-gray-600" />
                       </a>
-                      <a className="link" href="https://github.com/Md-Hasib-Askari" data-tippy-content="@github_handle">
+                      <a className="link" href="https://github.com/Md-Hasib-Askari" target="_blank" data-tippy-content="@github_handle">
                           <FaGithub size={35} className="text-gray-600" />
                       </a>
-                      <a className="link" href="https://www.linkedin.com/in/mdhasibaskari" data-tippy-content="@linkedin_handle">
+                      <a className="link" href="https://www.linkedin.com/in/mdhasibaskari" target="_blank" data-tippy-content="@linkedin_handle">
                           <FaLinkedin size={35} className="text-gray-600" />
                       </a>
-                      <a className="link" href="#" data-tippy-content="@instagram_handle">
+                      <a className="link" href="#" target="_blank" data-tippy-content="@instagram_handle">
                           <FaInstagram size={35} className="text-gray-600" />
                       </a>
-                      <a className="link" href="#" data-tippy-content="@youtube_handle">
+                      <a className="link" href="#" target="_blank" data-tippy-content="@youtube_handle">
                           <FaYoutube size={35} className="text-gray-600" />
                       </a>
                   </div>

@@ -79,7 +79,7 @@ function App() {
           {/* <!--Img Col--> */}
           <div className="w-full lg:w-2/5">
               {/* <!-- Big profile image for side bar (desktop) --> */}
-              <img src="./assets/vertical_img.png"
+              <img src="/assets/vertical_img.png"
                    className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block border-l-4 border-indigo-500"  alt="Anime Coding"/>
 
           </div>

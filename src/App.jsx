@@ -9,6 +9,12 @@ import vertical_img from './assets/vertical_img.png';
 import profile_img from './assets/logo.png'
 
 function App() {
+    const data = {
+        name: 'Md Hasib Askari',
+        designation: 'Full Stack Developer',
+        email: 'mdhsbaskari@gmail.com',
+        bio: 'Striving for the dreams to achieve something exceptional.'
+    }
   const [symbol, setSymbol] = useState('🌙');
   const [css, setCss] = useState({
       text: 'text-gray-900',
@@ -39,20 +45,23 @@ function App() {
                   {/* <!-- Image for mobile view--> */}
                   <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center border-b-4 border-r-4 border-indigo-500"
                        style={{backgroundImage: `url(${profile_img})`}}></div>
-                  <h1 className="text-3xl font-bold pt-8 lg:pt-0">Md Hasib Askari</h1>
+                  <h1 className="text-3xl font-bold pt-8 lg:pt-0">{data.name}</h1>
                   <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
                   <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
                       <RiHandbagFill className="mr-4 text-green-700" size={20}/>
-                      Full Stack Developer
+                      {data.designation}
                   </p>
                   <p className="pt-2 text-gray-600 text-sm lg:text-sm flex items-center justify-center lg:justify-start">
                       <HiMail className="mr-4 text-green-700" size={20} />
-                      <a href="mailto:mdhsbaskari@gmail.com">mdhsbaskari@gmail.com</a>
+                      <a href={`mailto:${data.email}`}>{data.email}</a>
                   </p>
-                  <p className="pt-8 text-sm">Striving for the dreams to achieve something exceptional.</p>
+                  <p className="pt-8 text-sm">{data.bio}</p>
                   <div className="pt-12 pb-8">
                       <button className="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
                           Get In Touch
+                      </button>
+                      <button className="ml-3 bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                          Projects <small className="font-thin">(coming soon)</small>
                       </button>
                   </div>
                   <div
